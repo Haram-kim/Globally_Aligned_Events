@@ -1,0 +1,8 @@
+<launch>
+  <!-- event bundler -->
+  <node name="event_bundler" pkg="event_bundler" type="bundler" output="screen">
+    <remap from="/events" to="/dvs/events" />
+    <remap from="/bundle_events" to="/dvs/bundle_events" />
+    <param name="yaml" type="string" value="$(find event_bundler)/config/config.yaml" />
+  </node>
+</launch>

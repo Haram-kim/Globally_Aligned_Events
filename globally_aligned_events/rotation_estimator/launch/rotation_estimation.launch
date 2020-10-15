@@ -1,0 +1,16 @@
+
+<launch>
+
+  <node name="rotation_estimator" pkg="rotation_estimator" type="rotation_estimation" output="screen">
+    <remap from="/dvs/events" to="/dvs/bundle_events" />
+    <param name="yaml" type="string" value="$(find rotation_estimator)/config/config.yaml" />
+  </node>
+
+  <node name="event_bundler" pkg="event_bundler" type="bundler" output="screen">
+    <remap from="/events" to="/dvs/events" />
+    <remap from="/bundle_events" to="/dvs/bundle_events" />
+    <param name="yaml" type="string" value="$(find event_bundler)/config/config.yaml" />
+  </node>
+
+
+</launch>

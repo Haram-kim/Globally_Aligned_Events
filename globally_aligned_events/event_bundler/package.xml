@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>event_bundler</name>
+  <version>0.0.0</version>
+  <description>The event_bundler package</description>
+
+  <author email="rlgkfka614@gmail.com">haram</author>
+  <maintainer email="rlgkfka614@gmail.com">haram</maintainer>
+  <license>MIT</license>
+  <url type="website">http://haram-kim.github.io</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+</package>
