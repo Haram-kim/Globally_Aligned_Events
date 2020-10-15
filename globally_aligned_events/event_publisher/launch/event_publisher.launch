@@ -1,5 +1,4 @@
 <launch>
-  <!-- visualization -->
   <node name="event_publisher" pkg="event_publisher" type="event_publisher" output="screen">
     <remap from="/events" to="/dvs/events" />
     <remap from="/imu" to="/dvs/imu" />
