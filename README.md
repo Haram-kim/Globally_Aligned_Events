@@ -1,7 +1,7 @@
 Globally_Aligned_Events
 =======================
 
-<img src="http://icsl.snu.ac.kr/haramkim/SNU_LARR.png" alt="SNU LARR logo">
+<img src="http://icsl.snu.ac.kr/haramkim/SNU_LARR.png" alt="SNU LARR logo" width = "300">
 
 The source code is released under the **MIT License**.
 The code works best on Ubuntu 16.04
