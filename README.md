@@ -15,7 +15,7 @@ We use [OpenCV](http://opencv.org) to visualize and manipulate images.
 We use [Eigen3](http://eigen.tuxfamily.org) for matrix operations.
 
 ## rpg_dvs_ros (optional: for event cameras)
-To publish the event messeages from an event camera[rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros/).
+To publish the event messeages from an event camera, please use the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros/) package.
 
 
 # Installation
@@ -45,3 +45,56 @@ $ catkin build rotation_estimator
 ```
 . devel/setup.bash
 ```
+
+# Launch files
+
+If you use data set
+```
+roslaunch event_publisher event_publisher.launch
+```
+
+
+# Data set format
+
+## File structure
+```
+/dataset_name
+  /image
+  /events.txt
+  /images
+  /imu.txt
+```
+
+## /image
+```
+/image
+  /{timestamp}.png
+  /{timestamp}.png
+  ...
+```
+## `events.txt` format
+```
+# events
+# timestampe x y polarity
+{timestamp} {x} {y} {polarity}
+{timestamp} {x} {y} {polarity}
+...
+```
+## `images.txt` format
+```
+# grey images
+# timestamp filename
+{timestamp} image/{timestamp}.png
+{timestamp} image/{timestamp}.png
+...
+```
+## `imu.txt` format
+```
+# imu
+# acceleration gyroscope
+# timestamp ax ay az gx gy gz
+{timestamp} {ax} {ay} {az} {gx} {gy} {gz}
+{timestamp} {ax} {ay} {az} {gx} {gy} {gz}
+...
+```
+
