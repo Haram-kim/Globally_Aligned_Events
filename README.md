@@ -85,14 +85,14 @@ roslaunch rotation_estimator rotation_estimation_davis.launch
   /imu.txt
 ```
 
-## /image
+### /image
 ```
 /image
   /{timestamp}.png
   /{timestamp}.png
   ...
 ```
-## `events.txt` format
+### `events.txt` format
 ```
 # events
 # timestampe x y polarity
@@ -100,7 +100,7 @@ roslaunch rotation_estimator rotation_estimation_davis.launch
 {timestamp} {x} {y} {polarity}
 ...
 ```
-## `images.txt` format
+### `images.txt` format
 ```
 # grey images
 # timestamp filename
@@ -108,7 +108,7 @@ roslaunch rotation_estimator rotation_estimation_davis.launch
 {timestamp} image/{timestamp}.png
 ...
 ```
-## `imu.txt` format
+### `imu.txt` format
 ```
 # imu
 # acceleration gyroscope
