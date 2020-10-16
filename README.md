@@ -48,11 +48,31 @@ $ catkin build rotation_estimator
 
 # Launch files
 
-If you use data set
+## Option 1: data set 
+
+When you use data set (check out the format described in below),
+
+set data set directory in ` ~/catkin_ws/src/event_publisher/launch/event_publisher.launch` 
 ```
-roslaunch event_publisher event_publisher.launch
+<param name="filename" type="string" value="{Set this value}" />
+```
+and parameters in `~/catkin_ws/src/event_publisher/config/config.yaml`.
+
+Launch the execute file.
+```
+roslaunch rotation_estimator rotation_estimation.launch
 ```
 
+## Option 2: event cameras
+
+When you use an event camera,
+
+install the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros/) package.
+
+Launch the execute file.
+```
+roslaunch rotation_estimator rotation_estimation_davis.launch
+```
 
 # Data set format
 
