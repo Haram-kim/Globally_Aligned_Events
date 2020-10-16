@@ -52,11 +52,10 @@ $ catkin build rotation_estimator
 
 When you use data set (check out the format described in below),
 
-set data set directory in ` ~/catkin_ws/src/event_publisher/launch/event_publisher.launch` 
+set data set directory in ` ~/catkin_ws/src/event_publisher/launch/event_publisher.launch`.
 ```
 <param name="filename" type="string" value="{Set this value}" />
 ```
-and parameters in `~/catkin_ws/src/event_publisher/config/config.yaml`.
 
 Launch the execute file.
 ```
@@ -65,14 +64,37 @@ roslaunch rotation_estimator rotation_estimation.launch
 
 ## Option 2: event cameras
 
-When you use an event camera,
-
-install the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros/) package.
+When you use an event camera, install the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros/) package.
 
 Launch the execute file.
 ```
 roslaunch rotation_estimator rotation_estimation_davis.launch
 ```
+
+# Configuration settings
+
+## Event publisher
+
+In ` ~/catkin_ws/src/event_publisher/config/config.yaml`,
+
+`width` and `height`: the camera parameters of the data set.
+
+`Event.delta_time` and `Event.delta_time`: the events number of an event array message.
+
+## Rotation estimator
+
+In ` ~/catkin_ws/src/rotation_estimator/config/config.yaml`,
+
+`sampling_rate`: rate of systemmatic samplling for events.
+
+`map_sampling_rate`: rate of systemmatic samplling for globally aligned events.
+
+`event_image_threshold`: event image theshold T_rho.
+
+`rotation_estimation`: on/off (1/0) the proposed method.
+
+`run_index`:  0- runs in real-time, x- runs for the x temporal windows instead of real-time operation.
+
 
 # Data set format
 
