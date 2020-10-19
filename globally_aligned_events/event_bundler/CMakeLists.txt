@@ -31,7 +31,7 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/include
   ${EIGEN3_INCLUDE_DIR}
   ${catkin_INCLUDE_DIRS}
-  ${OpenCV_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
 )
 
 add_library(${PROJECT_NAME} SHARED
