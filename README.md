@@ -105,7 +105,7 @@ In ` ~/catkin_ws/src/rotation_estimator/config/config.yaml`,
 /dataset_name
   /image
   /events.txt
-  /images
+  /images.txt
   /imu.txt
 ```
 
