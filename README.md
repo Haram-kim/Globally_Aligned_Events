@@ -27,7 +27,7 @@ To publish the event messeages from an event camera, please use the [rpg_dvs_ros
 $ cd
 $ mkdir -p catkin_ws/src
 $ cd catkin_ws/src
-$ catkin_init_workspace
+$ catkin config --init --mkdirs --extend /opt/ros/kinetic --merge-devel --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
 1. Clone this repository:
