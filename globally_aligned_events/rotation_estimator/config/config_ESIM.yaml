@@ -1,0 +1,69 @@
+%YAML:1.0
+
+Version: 1.0
+
+#--------------------------------------------------------------------------------------------
+# General Parameters
+#--------------------------------------------------------------------------------------------
+
+# rate of systemmatic samplling for events
+sampling_rate: 5
+# rate of systemmatic samplling for globally aligned events
+map_sampling_rate: 1
+# event image theshold T_rho
+event_image_threshold: 5
+# on/off (1/0) the proposed method 
+rotation_estimation: 1
+# 0: runs in real-time, x: runs for the x temporal windows instead of real-time operation.
+run_index: 0
+
+
+# view contrast maximization process after view_idex
+optimization_view_index: 1e3
+# view angle difference range to utilize globally aligned events (unit: radians) 
+mapping_interval: 0.628
+# scale of view for globally aligned events
+map_scale: 2
+
+#--------------------------------------------------------------------------------------------
+# Event Parameters
+#--------------------------------------------------------------------------------------------
+delta_time: 0.025
+max_event_num: 1e5
+
+#--------------------------------------------------------------------------------------------
+# Optimizer Parameters
+#--------------------------------------------------------------------------------------------
+
+# maximum iteration
+Optimizer.max_iter: 65
+# step size | optimization rate
+Optimizer.mu_angular_velocity: 0.05
+# smoothing factor | the degree of weigthing decrease in geometric moving average  
+Optimizer.rho_angular_velocity: 0.995
+
+# step size | optimization rate
+Optimizer.mu_angular_position: 0.0025
+# smoothing factor | the degree of weigthing decrease in geometric moving average  
+Optimizer.rho_angular_position: 0.05
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters
+#--------------------------------------------------------------------------------------------
+# size of real targets
+
+# original image size for camera
+width: 240
+height: 180
+
+# focus
+Camera.fx: 200.0
+Camera.fy: 200.0
+# center
+Camera.cx: 120.0
+Camera.cy: 80.0
+# radial distortion
+Camera.rd1: 0.0
+Camera.rd2: 0.0
+
+visualize.denom: 3
