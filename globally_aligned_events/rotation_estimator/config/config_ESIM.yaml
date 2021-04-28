@@ -61,7 +61,7 @@ Camera.fx: 200.0
 Camera.fy: 200.0
 # center
 Camera.cx: 120.0
-Camera.cy: 80.0
+Camera.cy: 90.0
 # radial distortion
 Camera.rd1: 0.0
 Camera.rd2: 0.0
