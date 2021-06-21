@@ -150,3 +150,5 @@ In ` ~/catkin_ws/src/rotation_estimator/config/config.yaml`,
 {timestamp} {x} {y} {z} {qx} {qy} {qz} {qw}
 {timestamp} {x} {y} {z} {qx} {qy} {qz} {qw}
 ...
+```
+
