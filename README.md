@@ -107,7 +107,7 @@ In ` ~/catkin_ws/src/rotation_estimator/config/config.yaml`,
   /events.txt
   /images.txt
   /imu.txt
-  /groundtruth.txt (*This will be uploaded until Feb/2021.)
+  /groundtruth.txt
 ```
 
 ### /image
@@ -142,4 +142,11 @@ In ` ~/catkin_ws/src/rotation_estimator/config/config.yaml`,
 {timestamp} {ax} {ay} {az} {gx} {gy} {gz}
 ...
 ```
-
+### `groundtruth.txt` format
+```
+# groundtruth
+# position quaternion
+# timestamp x y z qx qy qz qw
+{timestamp} {x} {y} {z} {qx} {qy} {qz} {qw}
+{timestamp} {x} {y} {z} {qx} {qy} {qz} {qw}
+...
