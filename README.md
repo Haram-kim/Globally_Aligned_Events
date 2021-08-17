@@ -110,14 +110,14 @@ In ` ~/catkin_ws/src/rotation_estimator/config/config.yaml`,
   /groundtruth.txt
 ```
 
-### /image
+### /image : timestamp (sec)
 ```
 /image
   /{timestamp}.png
   /{timestamp}.png
   ...
 ```
-### `events.txt` format
+### `events.txt` format : polarity(0/1)
 ```
 # events
 # timestamp x y polarity
