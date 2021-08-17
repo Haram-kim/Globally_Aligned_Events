@@ -120,7 +120,7 @@ In ` ~/catkin_ws/src/rotation_estimator/config/config.yaml`,
 ### `events.txt` format
 ```
 # events
-# timestampe x y polarity
+# timestamp x y polarity
 {timestamp} {x} {y} {polarity}
 {timestamp} {x} {y} {polarity}
 ...
